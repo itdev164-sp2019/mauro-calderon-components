@@ -11,18 +11,14 @@ background-color: rebaccapurple;
 margin-button: 1.45rem;
 
 `
+const StyledLink = styled(Link)`
+color: white;
+text-decoration: none
+`
 export const Masthead =({height,siteTitle}) => {
     return(
         <Outer height={height}>
-        <Link 
-        href="/"
-        style={{
-            color:`white`,
-            textDecoration:`none`
-        }}
-        >
-        {siteTitle}
-        </Link>
+        <StyledLink href="/">{siteTitle}</StyledLink>
         </Outer>
     )
 }
