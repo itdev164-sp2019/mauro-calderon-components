@@ -56,6 +56,11 @@ const theme = {
       secondary: 'hsl(208, 13%, 45%)',
       disabled: 'hsl(208, 13%, 75%)',
       hint: 'hsl(208, 13%, 75%)'
+    },
+    transitions:{
+      short: 'all 0.3s ease-out',
+      medium: 'all 0.6s ease-out',
+      long: 'all 0.9s ease-out',
     }
   }
 }
@@ -120,7 +125,16 @@ const variants = {
       ...defaults.link,
       color:theme.colors.primary.contrastText
     }
+  },
+  mastheadDrawer:{
+    primary:{
+      background: theme.colors.primary.main
+    },
+    contrast:{
+      background: theme.colors.primary.contrastText
+    }
   }
+  
 }
 
 const Gray = { ...theme, defaults, variants, images, icons }
