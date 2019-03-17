@@ -1,7 +1,7 @@
+
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-
 import './layout.css'
 import { ThemeProvider, ThemeConsumer} from 'styled-components'
 import { Gray as theme } from '../themes/Gray'
@@ -125,3 +125,4 @@ checkScrollPosition(){
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
+
