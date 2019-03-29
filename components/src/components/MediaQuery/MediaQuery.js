@@ -1,4 +1,5 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import PropTypes from 'prop-types'
 import styled, {ThemeConsumer} from 'styled-components'
 import {BaseContainer} from '../Element'
@@ -8,8 +9,16 @@ const Query = styled(BaseContainer)`
         display: none;
     }
 `
-
-export const MediaQuery = ({ device, theme, children, ...props }) => {
+export function MediaQuery ({ 
+    device, 
+    theme, 
+    children, 
+    ...props}:{
+        device:string,
+        theme:string,
+        children:React.Node,
+        props:any
+     }) {
     return (
         <ThemeConsumer>
             {theme => {

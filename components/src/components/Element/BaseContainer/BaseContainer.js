@@ -1,8 +1,17 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import {Flex, Box} from 'rebass';
 
-export const BaseContainer = ({children, flex, ...props}) => {
+export function BaseContainer ({
+    children, 
+    flex, 
+    ...props}:{
+        children:React.Node,
+        flex: boolean,
+        className: string,
+        props: any
+    }){
     if(flex){
         return(
             <Flex {...props} className={props.className}>
