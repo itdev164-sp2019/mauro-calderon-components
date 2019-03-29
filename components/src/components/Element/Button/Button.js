@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import Proptypes from 'prop-types'
 import {ButtonBase} from './ButtonBase'
@@ -8,7 +9,9 @@ const StyledButton = styled(ButtonBase)`
 
 `
 
-export const Button = props => <StyledButton {...props}/>
+export const Button = ( props:Proptypes.node) =>( 
+    <StyledButton {...props}/>
+)
 
 Button.prototype={
     variant: Proptypes.string

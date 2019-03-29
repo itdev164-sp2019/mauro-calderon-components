@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import {Box} from 'rebass'
 import styled from 'styled-components'
@@ -11,7 +12,12 @@ position: fixed;
 top:0px;
 z-index: 9999;
 `
-export const Masthead =({height,children}) =>{
+export function Masthead({
+    height,
+    children}:{
+        height:string,
+        children:React.Node
+    }) {
     return <Outer height = {height}>{children}</Outer>
 }
 
