@@ -14,7 +14,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <ShareButtonList
-          addThisPubId="ra-5cc251c707ca04de"
+          addThisPubId="ra-5cc1aed37bf604c5"
           googleAnalyticsId=""
           contentTitle="Fake title"
           contentImage="http://placekitten.com/g/300/700"
